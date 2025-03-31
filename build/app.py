@@ -6,7 +6,7 @@ app = Flask(__name__)
 def hello():
     env = os.getenv("APP_ENV", "dev")  # 默认为 dev
     if env == "prod":
-        return "Hello gitops prod 2"
+        return "Hello gitops prod date"
     else:
         return "Hello gitops dev 1"
 
@@ -14,7 +14,7 @@ def hello():
 def api_response():
     env = os.getenv("APP_ENV", "dev")  # 默认为 dev
     if env == "prod":
-        return "api gitops prod 2"
+        return "api gitops prod date"
     else:
         return "api gitops dev 1"
 
