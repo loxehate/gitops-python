@@ -8,7 +8,7 @@ def hello():
     if env == "prod":
         return "Hello gitops prod qqemail update"
     else:
-        return "Hello gitops dev 1"
+        return "Hello gitops dev 2"
 
 @app.route('/api')
 def api_response():
@@ -16,7 +16,7 @@ def api_response():
     if env == "prod":
         return "api gitops prod qqemail update"
     else:
-        return "api gitops dev 1"
+        return "api gitops dev 2"
 
 
 if __name__ == '__main__':
