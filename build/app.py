@@ -6,17 +6,17 @@ app = Flask(__name__)
 def hello():
     env = os.getenv("APP_ENV", "dev")  # 默认为 dev
     if env == "prod":
-        return "Hello gitops prod qqemail update"
+        return "Hello gitops prod applications"
     else:
-        return "Hello gitops dev 2"
+        return "Hello gitops dev applications"
 
 @app.route('/api')
 def api_response():
     env = os.getenv("APP_ENV", "dev")  # 默认为 dev
     if env == "prod":
-        return "api gitops prod qqemail update"
+        return "api gitops prod applications"
     else:
-        return "api gitops dev 2"
+        return "api gitops dev applications"
 
 
 if __name__ == '__main__':
