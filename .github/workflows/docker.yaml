@@ -79,3 +79,4 @@ jobs:
  #         linux/arm64
         tags: |
           ${{ env.ALIYUN_REGISTRY }}/${{ env.ALIYUN_NAME_SPACE }}/${{ env.IMAGE_NAME }}:${{ steps.vars.outputs.sha_short }}
+          ${{ env.ALIYUN_REGISTRY }}/${{ env.ALIYUN_NAME_SPACE }}/${{ env.IMAGE_NAME }}:latest
