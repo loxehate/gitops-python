@@ -11,11 +11,11 @@ app = Flask(__name__)
 
 @app.route('/', methods=['get'])
 def calculate():
-    return ('当前环境images-test：{}'.format(config._profile))
+    return ('当前环境images-end：{}'.format(config._profile))
 
 @app.route('/api', methods=['get'])
 def api_response():
-    return ('当前api环境images-test：{}'.format(config._profile))
+    return ('当前api环境images-end：{}'.format(config._profile))
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
